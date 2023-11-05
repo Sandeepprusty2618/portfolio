@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+
+}
+
+:root{
+    --bg-color:#000;
+    --h1-color:rgb(0, 255, 200);
+    --h2-color : rgb(28, 9, 85);
+}
+
+body
+{
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 5rem 0rem 0rem;
+    align-items: center;
+    width: 100%;
+
+}
+header nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+a.active
+{
+    color: red;
+    border-bottom: 1px solid blue;
+}
+
+.logo{
+    margin-left: 5rem;
+}
+ul li{
+    padding: 2rem;
+}
+
+li a
+{
+    transition: 5ms;
+    transition: .3s;
+    color: aqua;
+}
+
+li a:hover
+{
+    color: rgb(255, 0, 0);
+}
+
+section{
+    min-height: 100vh;
+}
+.home
+{
+    border: 2px solid red;
+    height: 100vh;
+}
+.home-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 2px solid aqua;
+
+}
+.profile img{
+    height: 35rem;
+    width: 35rem;
+    border-radius: 90%;
+}
+.intro{
+    margin: 2rem;
+    height: 15rem;
+    line-height: 3rem;
+}
+button{
+    color: #ffff;
+    padding: 0.2rem;
+    background: #0791ad;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.intro-name
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px var(--h1-color),
+                 0px 0px 20px var(--h1-color),
+                 0px 0px 20px var(--h1-color);
+    animation: colorchange 3s linear infinite;             
+}
+
+@keyframes colorchange
+{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+h1 span{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px aqua,
+                 0px 0px 20px aqua,
+                 0px 0px 20px aqua;
+
+    font-family: 'Kenia', sans-serif;
+}
+
+.intro h2
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px var(--h2-color),
+                 0px 0px 20px var(--h2-color),
+                 0px 0px 20px var(--h2-color);
+}
+h2 span{
+    color: rgb(230, 198, 20);
+}
+
+.icons
+{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.icons a {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: chocolate;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.about-content .about-heading
+{
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   /* border: 2px solid red; */
+}
+.about-content img{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
+.about-myself{
+    margin-top: 3rem;
+    color: aqua ;
+
+}
+p span{
+    color: rgb(218, 132, 28);
+}
+.about-myself p {
+    line-height: 2.5rem;
+}
+
+.s-education h1
+{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.se-content
+{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+.se-content .skills
+{
+    border: 2px solid rgb(69, 67, 67);
+    box-shadow: 0px 0px 10px black;
+    line-height: 2.5rem;
+    width: 35%;  
+    background: #140a3e; 
+    color: #fff;
+    transition: .3s;
+    position: relative;
+    z-index: 100;
+    transition: .3s;
+}
+
+.skills h1{
+    color: yellowgreen;
+}
+.education-content{
+    font-size: 1.3rem;
+}
+.education h1{
+    color: yellowgreen;
+}
+
+
+
+
+
+
+
+
+.se-content .education
+{
+    border: 2px solid rgb(69, 67, 67);
+    box-shadow: 0px 0px 10px black;
+    line-height: 2.5rem;
+    width: 35%;  
+    color: #fff;
+    background: #140a3e;  
+}
+
+.contact
+{
+    /* background: aqua; */
+    border: 2px solid red/;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    text-align: center;
+    /* background-color: ; */
+}
+
+form
+{
+    width: 100%;
+}
+
+.contant-content
+{
+    /* background: red; */
+    /* border: 2px solid red; */
+    height: 80vh;
+    width: 90%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contant-content .required-details
+{
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.required-details .left
+{
+    width: 30vw;
+    /* background-color: purple; */
+    height: 50vh;
+    /* margin-left: 3rem; */
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border: 2px solid white;
+    padding: 3rem;
+    box-shadow: 0px 0px 10px aqua;
+}
+.left input{
+    height: 2.5rem;
+}
+input::placeholder{
+    font-size: 0.9rem;
+}
+
+.required-details .right
+{
+    width: 30vw;
+    /* background-color: purple; */
+    height: 50vh;
+    /* margin-right: 3rem; */
+    /* margin-top: 5rem; */
+    border: 2px solid white;
+    /* padding: 3rem; */
+    box-shadow: 0px 0px 10px aqua;
+    
+}
+.right textarea{
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    /* background-color: purple; */
+}
+input::placeholder{
+    font-size: 0.9rem;
+}
+
+.submit-content
+{
+    margin-top: -12rem;
+}
+.submit-content button{
+    width: 10rem;
+    font-size: 1rem;
+    transition: .3s;
+    border: none;
+    border: 2px solid white;
+}
+
+.submit-content button:hover
+{
+    box-shadow: 0px 0px 20px aqua;
+}
+
+
+
+
+
+
